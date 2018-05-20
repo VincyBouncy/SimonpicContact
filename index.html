@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Tipper: Gallery</title>
+    <link type="text/css" rel="stylesheet" href="./Resources/CSS/reset.css">
+    <link type="text/css" rel="stylesheet" href="./Resources/CSS/style.css">
+
+  </head>
+
+  <body>
+
+    <!-- Full Width Image Feature -->
+    <div class="image-feature">
+      <div class="container">
+        <div class="feature-text">
+          <h3>Simon Tipper: Contact.</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="contact-form">
+      <form action="/action_page.php">
+        <label for="fname">Your Name </label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Your email</label>
+        <input type="text" id="lname" name="lastname" placeholder="Don't forget the @...">
+
+        <label for="subject">What Do You Want?</label>
+        <textarea id="subject" name="subject" placeholder="You can write, I don't bite" style="height:150px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!--Interactive Menu-->
+    <a href="https://vincybouncy.github.io/Simonpic"><button class="btn btn-6 btn-6c">BACK</button></a>
+
+    <!-- Footer -->
+    <div class="container-footer">
+      <h6>&copy; Simon Tipper Photography.</h6>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+
+    </script>
+  </body>
+
+</html>
